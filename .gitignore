@@ -1,3 +1,7 @@
+doc/
+chroma/
+learning/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
