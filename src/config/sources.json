@@ -1,0 +1,990 @@
+{
+    "web_sources": [
+        {
+            "url": "https://es.khanacademy.org/math/algebra",
+            "title": "Álgebra - Khan Academy"
+        },
+        {
+            "url": "https://ocw.mit.edu/courses/mathematics/18-01-single-variable-calculus-fall-2006/",
+            "title": "Cálculo de una variable - MIT OpenCourseWare"
+        },
+        {
+            "url": "https://www.geeksforgeeks.org/propositional-logic/",
+            "title": "Lógica Proposicional - GeeksforGeeks"
+        },
+        {
+            "url": "https://www.britannica.com/science/set-theory",
+            "title": "Teoría de Conjuntos - Encyclopaedia Britannica"
+        },
+        {
+            "url": "https://www.allaboutcircuits.com/textbook/digital/chpt-7/introduction-boolean-algebra/",
+            "title": "Álgebra Booleana y Circuitos Lógicos - All About Circuits"
+        },
+        {
+            "url": "https://learn.microsoft.com/es-es/dotnet/csharp/programming-guide/",
+            "title": "Guía de programación de C# - Microsoft Docs"
+        },
+        {
+            "url": "https://docs.python.org/es/3/tutorial/index.html",
+            "title": "Tutorial de Python - Documentación Oficial"
+        },
+        {
+            "url": "https://www.coursera.org/learn/linear-algebra-machine-learning",
+            "title": "Álgebra Lineal para Machine Learning - Coursera"
+        },
+        {
+            "url": "https://www.intmath.com/",
+            "title": "Matemáticas Interactivas - Interactive Mathematics"
+        },
+        {
+            "url": "https://plato.stanford.edu/entries/logic-propositional/",
+            "title": "Lógica Proposicional - Stanford Encyclopedia"
+        },
+        {
+            "url": "https://www.mathsisfun.com/sets/sets-introduction.html",
+            "title": "Introducción a Teoría de Conjuntos - Math is Fun"
+        },
+        {
+            "url": "https://nand2tetris.org/",
+            "title": "From NAND to Tetris - Construyendo computadoras"
+        },
+        {
+            "url": "https://learn.microsoft.com/es-es/dotnet/csharp/language-reference/",
+            "title": "Referencia de C# - Microsoft"
+        },
+        {
+            "url": "https://realpython.com/",
+            "title": "Python práctico - Real Python"
+        },
+        {
+            "url": "https://brilliant.org/courses/#math-foundational",
+            "title": "Fundamentos Matemáticos - Brilliant.org"
+        },
+        {
+            "url": "https://www.edx.org/course/calculus-1a-differentiation",
+            "title": "Cálculo Diferencial - edX"
+        },
+        {
+            "url": "https://www.logicmatters.net/ifl/",
+            "title": "Introducción a la Lógica Formal - Logic Matters"
+        },
+        {
+            "url": "https://www.purplemath.com/modules/setnotn.htm",
+            "title": "Notación de Conjuntos - Purplemath"
+        },
+        {
+            "url": "https://www.electronics-tutorials.ws/boolean/bool_1.html",
+            "title": "Circuitos Lógicos - Electronics Tutorials"
+        },
+        {
+            "url": "https://csharp.net-tutorials.com/",
+            "title": "Tutoriales de C# - net-tutorials"
+        },
+        {
+            "url": "https://www.pythonlikeyoumeanit.com/",
+            "title": "Python Profesional - Python Like You Mean It"
+        },
+        {
+            "url": "https://www.math.ucdavis.edu/~linear/",
+            "title": "Álgebra Lineal - UC Davis"
+        },
+        {
+            "url": "https://www.whitman.edu/mathematics/calculus/",
+            "title": "Cálculo Multivariable - Whitman College"
+        },
+        {
+            "url": "https://leanprover.github.io/logic_and_proof/",
+            "title": "Lógica y Demostraciones - LeanProver"
+        },
+        {
+            "url": "https://www.cuemath.com/sets/",
+            "title": "Teoría de Conjuntos - Cuemath"
+        },
+        {
+            "url": "https://www.electronics-lab.com/article/digital-logic-gates/",
+            "title": "Compuertas Lógicas - Electronics Lab"
+        },
+        {
+            "url": "https://zetcode.com/lang/csharp/",
+            "title": "C# desde Cero - ZetCode"
+        },
+        {
+            "url": "https://effectivepython.com/",
+            "title": "Python Efectivo - Effective Python"
+        },
+        {
+            "url": "https://www.math.stonybrook.edu/~scott/mat515.fall22/",
+            "title": "Álgebra Abstracta - Stony Brook"
+        },
+        {
+            "url": "https://tutorial.math.lamar.edu/Classes/CalcII/CalcII.aspx",
+            "title": "Cálculo Integral - Paul's Online Notes"
+        },
+        {
+            "url": "https://www.fibonicci.com/logical-reasoning/propositional-logic/",
+            "title": "Razonamiento Lógico - Fibonicci"
+        },
+        {
+            "url": "https://www.vedantu.com/maths/sets",
+            "title": "Operaciones con Conjuntos - Vedantu"
+        },
+        {
+            "url": "https://www.digikey.com/en/resources/edu/logic-gates",
+            "title": "Fundamentos de Circuitos Lógicos - DigiKey"
+        },
+        {
+            "url": "https://csharppatterns.dev/",
+            "title": "Patrones en C# - C# Patterns"
+        },
+        {
+            "url": "https://pythontutor.com/",
+            "title": "Visualización de Código Python - Python Tutor"
+        },
+        {
+            "url": "https://www.math.cmu.edu/~jmackey/151_128/lectures/lectures.html",
+            "title": "Álgebra Lineal Aplicada - Carnegie Mellon"
+        },
+        {
+            "url": "https://www.sfu.ca/math-coursenotes/Math%20157%20Course%20Notes/",
+            "title": "Análisis Matemático - Simon Fraser University"
+        },
+        {
+            "url": "https://www.logicinaction.org/",
+            "title": "Lógica para Ciencias Computacionales - Logic in Action"
+        },
+        {
+            "url": "https://www.math-only-math.com/set-theory.html",
+            "title": "Teoría de Conjuntos - Math Only Math"
+        },
+        {
+            "url": "https://www.eeweb.com/basic-boolean-circuits/",
+            "title": "Circuitos Booleanos - EEWeb"
+        },
+        {
+            "url": "https://www.udemy.com/course/csharp-intermediate-classes-interfaces-and-oop/",
+            "title": "C# Intermedio: POO - Udemy"
+        },
+        {
+            "url": "https://www.datacamp.com/tracks/python-programmer",
+            "title": "Programador Python - DataCamp"
+        },
+        {
+            "url": "https://www.math.uni-hamburg.de/home/geschke/teaching/SetTheory.pdf",
+            "title": "Notas de Teoría de Conjuntos - Universität Hamburg"
+        },
+        {
+            "url": "https://www.cburch.com/logic/",
+            "title": "Diseño de Circuitos Lógicos - Dr. J. Burch"
+        },
+        {
+            "url": "https://www.pluralsight.com/paths/csharp",
+            "title": "Ruta de Aprendizaje C# - Pluralsight"
+        },
+        {
+            "url": "https://www.pygame.org/docs/",
+            "title": "Programación de Juegos con PyGame"
+        },
+        {
+            "url": "https://www.math.colostate.edu/~adams/teaching/",
+            "title": "Análisis Real - Colorado State University"
+        },
+        {
+            "url": "https://www.cs.cornell.edu/courses/cs2800/2023fa/",
+            "title": "Matemáticas Discretas - Cornell University"
+        },
+        {
+            "url": "https://www.cprogramming.com/tutorial/c-tutorial.html",
+            "title": "Programación en C/C++ - CProgramming"
+        }
+    ],
+    "local_sources": [
+        {
+            "path": "./corpus/COMO_ENTENDER_Y_HACER_DEMOSTRACIONES_EN.pdf",
+            "title": "COMO_ENTENDER_Y_HACER_DEMOSTRACIONES_EN.pdf"
+        },
+        {
+            "path": "./corpus/Linero-DemostracionMatematicas(jsimon).pdf",
+            "title": "Linero-DemostracionMatematicas(jsimon).pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 1. Numeros Complejos I.pdf",
+            "title": "Conf 1. Numeros Complejos I.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 10. Espacios Vectoriales I.pdf",
+            "title": "Conf 10. Espacios Vectoriales I.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 11. Espacios Vectoriales II.pdf",
+            "title": "Conf 11. Espacios Vectoriales II.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 12. Espacios Vectoriales III.pdf",
+            "title": "Conf 12. Espacios Vectoriales III.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 13. Espacios Vectoriales IV.pdf",
+            "title": "Conf 13. Espacios Vectoriales IV.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 14. Espacios Vectoriales V.pdf",
+            "title": "Conf 14. Espacios Vectoriales V.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 15. Aplicaciones lineales I.pdf",
+            "title": "Conf 15. Aplicaciones lineales I.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 16. Aplicaciones lineales II.pdf",
+            "title": "Conf 16. Aplicaciones lineales II.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 17 Aplicaciones lineales III.pdf",
+            "title": "Conf 17 Aplicaciones lineales III.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 18 Vectores y valores propios I.pdf",
+            "title": "Conf 18 Vectores y valores propios I.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 2. Numeros Complejos I I.pdf",
+            "title": "Conf 2. Numeros Complejos I I.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 3. Polinomios I.pdf",
+            "title": "Conf 3. Polinomios I.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 4. Polinomios II.pdf",
+            "title": "Conf 4. Polinomios II.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 5. Polinomios III.pdf",
+            "title": "Conf 5. Polinomios III.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 6. SEL 1Gauss.pdf",
+            "title": "Conf 6. SEL 1Gauss.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 7. SEL 2 Matrices. Cramer.pdf",
+            "title": "Conf 7. SEL 2 Matrices. Cramer.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 8. SEL 3 Det 2 y 3. Det n. Inversa..pdf",
+            "title": "Conf 8. SEL 3 Det 2 y 3. Det n. Inversa..pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Conf 9. SEL 4.Rg de una matriz. KC.pdf",
+            "title": "Conf 9. SEL 4.Rg de una matriz. KC.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP 1 Numeros Complejos.pdf",
+            "title": "CP 1 Numeros Complejos.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP10 EV2.pdf",
+            "title": "CP10 EV2.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP10 SEL4.pdf",
+            "title": "CP10 SEL4.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP11 EV1.pdf",
+            "title": "CP11 EV1.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP12 EV2.pdf",
+            "title": "CP12 EV2.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP13 EV3.pdf",
+            "title": "CP13 EV3.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP14 EV4.pdf",
+            "title": "CP14 EV4.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP15 EV5.pdf",
+            "title": "CP15 EV5.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP16 EV6.pdf",
+            "title": "CP16 EV6.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP17 AL1.pdf",
+            "title": "CP17 AL1.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP18 AL2.pdf",
+            "title": "CP18 AL2.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP19 AL3.pdf",
+            "title": "CP19 AL3.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP20 AL4.pdf",
+            "title": "CP20 AL4.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP21 VP.pdf",
+            "title": "CP21 VP.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP22 AL y VP.pdf",
+            "title": "CP22 AL y VP.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP3 Pol1.pdf",
+            "title": "CP3 Pol1.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP4 Pol2.pdf",
+            "title": "CP4 Pol2.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP5 Pol3.pdf",
+            "title": "CP5 Pol3.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP6 Pol4.pdf",
+            "title": "CP6 Pol4.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP7 SEL1.pdf",
+            "title": "CP7 SEL1.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP8 SEL2.pdf",
+            "title": "CP8 SEL2.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/CP9 SEL3.pdf",
+            "title": "CP9 SEL3.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Ejercicios Adic CP 1 (NC) (1).pdf",
+            "title": "Ejercicios Adic CP 1 (NC) (1).pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/Ejercicios Adic CP 1 (NC) (2).pdf",
+            "title": "Ejercicios Adic CP 1 (NC) (2).pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/ME01501C.pdf",
+            "title": "ME01501C.pdf"
+        },
+        {
+            "path": "./corpus/Algebra I/[ Matemática ] Álgebra.pdf",
+            "title": "[ Matemática ] Álgebra.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C1 Geometria. Coordenadas y vectores 2023.pdf",
+            "title": "C1 Geometria. Coordenadas y vectores 2023.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C10 Subgrupos ciclicos . Isomorfismo.pdf",
+            "title": "C10 Subgrupos ciclicos . Isomorfismo.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C11 Anillos y cuerpos.pptx.pdf",
+            "title": "C11 Anillos y cuerpos.pptx.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C12 Formas Bilineales..pdf",
+            "title": "C12 Formas Bilineales..pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C13 Producto escalar y norma II.pdf",
+            "title": "C13 Producto escalar y norma II.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C14 Formas lin y End III.pdf",
+            "title": "C14 Formas lin y End III.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C15 Formas Cuadráticas I.pdf",
+            "title": "C15 Formas Cuadráticas I.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C16 Formas cuadráticas II.pdf",
+            "title": "C16 Formas cuadráticas II.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C2 Geometria. Operaciones con vectores 2023.pdf",
+            "title": "C2 Geometria. Operaciones con vectores 2023.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C3 Recta en el plano.pdf",
+            "title": "C3 Recta en el plano.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C4 Plano y recta en el espacio.pdf",
+            "title": "C4 Plano y recta en el espacio.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C5 Conicas.pdf",
+            "title": "C5 Conicas.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C6 Transformaciones de coordenadas.pdf",
+            "title": "C6 Transformaciones de coordenadas.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C7 Coordenadas Polares (1).pdf",
+            "title": "C7 Coordenadas Polares (1).pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C8 Superficies cuadricas.pdf",
+            "title": "C8 Superficies cuadricas.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/C9 Grupos y subgrupos.pdf",
+            "title": "C9 Grupos y subgrupos.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP1 G1.pdf",
+            "title": "CP1 G1.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP10 EA2.pdf",
+            "title": "CP10 EA2.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP11 EA3.pdf",
+            "title": "CP11 EA3.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP12 AB1.pdf",
+            "title": "CP12 AB1.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP13 AB2.pdf",
+            "title": "CP13 AB2.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP14 AB3.pdf",
+            "title": "CP14 AB3.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP15 FC1.pdf",
+            "title": "CP15 FC1.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP16 FC2.pdf",
+            "title": "CP16 FC2.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP2 G2.pdf",
+            "title": "CP2 G2.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP3 G3.pdf",
+            "title": "CP3 G3.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP4 G4 2023.pdf",
+            "title": "CP4 G4 2023.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP5 G5 2023.pdf",
+            "title": "CP5 G5 2023.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP6 G6 2023.pdf",
+            "title": "CP6 G6 2023.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP7 G7.pdf",
+            "title": "CP7 G7.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP8 G8.pdf",
+            "title": "CP8 G8.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/CP9 EA1.pdf",
+            "title": "CP9 EA1.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/F. Hernandez Complementos de algebra lineal.pdf",
+            "title": "F. Hernandez Complementos de algebra lineal.pdf"
+        },
+        {
+            "path": "./corpus/Algebra II/Geometria 4 Ecuacion de la recta.pdf",
+            "title": "Geometria 4 Ecuacion de la recta.pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Capitulo 1. Preliminares. 1ro de abril 2022..pdf",
+            "title": "Capitulo 1. Preliminares. 1ro de abril 2022..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Capítulo 3. Derivada y Diferencial. 18 de marzo de 2022..pdf",
+            "title": "Capítulo 3. Derivada y Diferencial. 18 de marzo de 2022..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Capítulo_2_Funciones_y_sus_límites_1ro_de_abril_de_2022_.pdf",
+            "title": "Capítulo_2_Funciones_y_sus_límites_1ro_de_abril_de_2022_.pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase  2. Ejercicios..pdf",
+            "title": "Clase  2. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 10. Ejercicios..pdf",
+            "title": "Clase 10. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 10. Teoría..pdf",
+            "title": "Clase 10. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 11. Ejercicios..pdf",
+            "title": "Clase 11. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 11. Teoría..pdf",
+            "title": "Clase 11. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 12. Ejercicios..pdf",
+            "title": "Clase 12. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 12. Teoría..pdf",
+            "title": "Clase 12. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 13. Ejercicios..pdf",
+            "title": "Clase 13. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 13. Teoría..pdf",
+            "title": "Clase 13. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 14. Ejercicios..pdf",
+            "title": "Clase 14. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 14. Teoría..pdf",
+            "title": "Clase 14. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 15. Ejercicios..pdf",
+            "title": "Clase 15. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 15. Teoría..pdf",
+            "title": "Clase 15. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 2. Teoría..pdf",
+            "title": "Clase 2. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 3. Ejercicios..pdf",
+            "title": "Clase 3. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 3. Teoría..pdf",
+            "title": "Clase 3. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 4. Ejercicios..pdf",
+            "title": "Clase 4. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 4. Teoría..pdf",
+            "title": "Clase 4. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 5. Ejercicios..pdf",
+            "title": "Clase 5. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 5. Teoría..pdf",
+            "title": "Clase 5. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 6. Ejercicios..pdf",
+            "title": "Clase 6. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 6. Teoría..pdf",
+            "title": "Clase 6. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 7. Ejercicios..pdf",
+            "title": "Clase 7. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 7. Teoría..pdf",
+            "title": "Clase 7. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 8. Ejercicios..pdf",
+            "title": "Clase 8. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 8. Teoría..pdf",
+            "title": "Clase 8. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 9. Ejercicios..pdf",
+            "title": "Clase 9. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/Clase 9. Teoría..pdf",
+            "title": "Clase 9. Teoría..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/CP 10. Soluciones..pdf",
+            "title": "CP 10. Soluciones..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/CP 11. Soluciones..pdf",
+            "title": "CP 11. Soluciones..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/CP 12. Soluciones..pdf",
+            "title": "CP 12. Soluciones..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/CP 14. Soluciones (que en realidad es la 13).pdf",
+            "title": "CP 14. Soluciones (que en realidad es la 13).pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/CP 18. Soluciones (que es la 15).pdf",
+            "title": "CP 18. Soluciones (que es la 15).pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/CP 2. Respuestas Ejercicios.pdf",
+            "title": "CP 2. Respuestas Ejercicios.pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/CP 3. Respuestas Ejercicios.pdf",
+            "title": "CP 3. Respuestas Ejercicios.pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/CP 4. Respuestas Ejercicios.pdf",
+            "title": "CP 4. Respuestas Ejercicios.pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/CP 5. Soluciones..pdf",
+            "title": "CP 5. Soluciones..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/CP 6. Soluciones..pdf",
+            "title": "CP 6. Soluciones..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/CP 8. Soluciones..pdf",
+            "title": "CP 8. Soluciones..pdf"
+        },
+        {
+            "path": "./corpus/Analisis I/E.R. Análisis I.pdf",
+            "title": "E.R. Análisis I.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/1_5071378129054860259.pdf",
+            "title": "1_5071378129054860259.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Cap I(Rn).pdf",
+            "title": "Cap I(Rn).pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Cap II(Lim-Cont).pdf",
+            "title": "Cap II(Lim-Cont).pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Cap III(Dif).pdf",
+            "title": "Cap III(Dif).pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Capitulo_5_Series_e_Integrales_impropias_de_primera_especie_1ro.pdf",
+            "title": "Capitulo_5_Series_e_Integrales_impropias_de_primera_especie_1ro.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Capítulo 4. Integración. 1ro de abril 2022..pdf",
+            "title": "Capítulo 4. Integración. 1ro de abril 2022..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Capítulo_6_Análisis_de_funcones_de_varias_variables_1ro_de_abril.pdf",
+            "title": "Capítulo_6_Análisis_de_funcones_de_varias_variables_1ro_de_abril.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Clase de funciones integrables.pdf",
+            "title": "Clase de funciones integrables.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP  1. Ejercicios..pdf",
+            "title": "CP  1. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP  2. Ejercicios..pdf",
+            "title": "CP  2. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP  3. Ejercicios..pdf",
+            "title": "CP  3. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP . Límite de funciones de vv..pdf",
+            "title": "CP . Límite de funciones de vv..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 13 y 14. Ejercicios..pdf",
+            "title": "CP 13 y 14. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 15. Diferenciabilidad y derivadas parciales..pdf",
+            "title": "CP 15. Diferenciabilidad y derivadas parciales..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 16. Derivada de la función compuesta.pdf",
+            "title": "CP 16. Derivada de la función compuesta.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 18. Extremos  de funciones de varias variables..pdf",
+            "title": "CP 18. Extremos  de funciones de varias variables..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 4. Integral definida..pdf",
+            "title": "CP 4. Integral definida..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 5. Integral con límite variable..pdf",
+            "title": "CP 5. Integral con límite variable..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 6 y 7. Calculo de integrales y áreas.pdf",
+            "title": "CP 6 y 7. Calculo de integrales y áreas.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 6. Calculo de integrales y áreas.pdf",
+            "title": "CP 6. Calculo de integrales y áreas.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 8. Series de términos positivos..pdf",
+            "title": "CP 8. Series de términos positivos..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 8. Series numéricas..pdf",
+            "title": "CP 8. Series numéricas..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 9. Ejercicios..pdf",
+            "title": "CP 9. Ejercicios..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP 9. Series de términos de signo arbitrario..pdf",
+            "title": "CP 9. Series de términos de signo arbitrario..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/CP_17_Derivada_direccional_y_gradiente_Derivadas_de_orden_superior.pdf",
+            "title": "CP_17_Derivada_direccional_y_gradiente_Derivadas_de_orden_superior.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Derivada de la función compuesta. De orden superior..pdf",
+            "title": "Derivada de la función compuesta. De orden superior..pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Derivada Direccional y Gradiente.pdf",
+            "title": "Derivada Direccional y Gradiente.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Diferenciabilidad de funciones de varias variables.pdf",
+            "title": "Diferenciabilidad de funciones de varias variables.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Ejercicios de Premio Integrales impropias.pdf",
+            "title": "Ejercicios de Premio Integrales impropias.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Extremos de funciones de varias variables.pdf",
+            "title": "Extremos de funciones de varias variables.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Ex_Suf_AMII_230924.pdf",
+            "title": "Ex_Suf_AMII_230924.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Integrales impropias de 1ra  primera Especie.pdf",
+            "title": "Integrales impropias de 1ra  primera Especie.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Limite y continuidad fvv.pdf",
+            "title": "Limite y continuidad fvv.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Series de términos de signo arbitrario.pdf",
+            "title": "Series de términos de signo arbitrario.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Series de términos positivos.pdf",
+            "title": "Series de términos positivos.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Series numéricas.pdf",
+            "title": "Series numéricas.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Teoremas del valor medio.pdf",
+            "title": "Teoremas del valor medio.pdf"
+        },
+        {
+            "path": "./corpus/Analisis II/Teoremas fundamentales del cálculo integral..pdf",
+            "title": "Teoremas fundamentales del cálculo integral..pdf"
+        },
+        {
+            "path": "./corpus/Logica/cp02.pdf",
+            "title": "cp02.pdf"
+        },
+        {
+            "path": "./corpus/Logica/cp03-04.pdf",
+            "title": "cp03-04.pdf"
+        },
+        {
+            "path": "./corpus/Logica/cp05.pdf",
+            "title": "cp05.pdf"
+        },
+        {
+            "path": "./corpus/Logica/cp06.pdf",
+            "title": "cp06.pdf"
+        },
+        {
+            "path": "./corpus/Logica/cp07.pdf",
+            "title": "cp07.pdf"
+        },
+        {
+            "path": "./corpus/Logica/cp08.pdf",
+            "title": "cp08.pdf"
+        },
+        {
+            "path": "./corpus/Logica/cp09.pdf",
+            "title": "cp09.pdf"
+        },
+        {
+            "path": "./corpus/Logica/cp1.pdf",
+            "title": "cp1.pdf"
+        },
+        {
+            "path": "./corpus/Logica/cp10.pdf",
+            "title": "cp10.pdf"
+        },
+        {
+            "path": "./corpus/Logica/cp11.pdf",
+            "title": "cp11.pdf"
+        },
+        {
+            "path": "./corpus/Logica/LEYES-pdf.pdf",
+            "title": "LEYES-pdf.pdf"
+        },
+        {
+            "path": "./corpus/Logica/Libro Logica - 2016.pdf",
+            "title": "Libro Logica - 2016.pdf"
+        },
+        {
+            "path": "./corpus/Logica/Resumen de Lógica.pdf",
+            "title": "Resumen de Lógica.pdf"
+        },
+        {
+            "path": "./corpus/Prog/01_ReviewRecursion.zip",
+            "title": "01_ReviewRecursion.zip"
+        },
+        {
+            "path": "./corpus/Prog/02_Divide_y_Venceras.zip",
+            "title": "02_Divide_y_Venceras.zip"
+        },
+        {
+            "path": "./corpus/Prog/04_Combinatoria.zip",
+            "title": "04_Combinatoria.zip"
+        },
+        {
+            "path": "./corpus/Prog/05_Clases.zip",
+            "title": "05_Clases.zip"
+        },
+        {
+            "path": "./corpus/Prog/06_Genericidad_&_Interfaces.zip",
+            "title": "06_Genericidad_&_Interfaces.zip"
+        },
+        {
+            "path": "./corpus/Prog/07_IEnumerator_&_IEnumerable.zip",
+            "title": "07_IEnumerator_&_IEnumerable.zip"
+        },
+        {
+            "path": "./corpus/Prog/08_ICollection_IList_List.zip",
+            "title": "08_ICollection_IList_List.zip"
+        },
+        {
+            "path": "./corpus/Prog/09_Programacion_Funcional.zip",
+            "title": "09_Programacion_Funcional.zip"
+        },
+        {
+            "path": "./corpus/Prog/10_Pilas.zip",
+            "title": "10_Pilas.zip"
+        },
+        {
+            "path": "./corpus/Prog/11_Diccionarios.zip",
+            "title": "11_Diccionarios.zip"
+        },
+        {
+            "path": "./corpus/Prog/12_Arboles.zip",
+            "title": "12_Arboles.zip"
+        },
+        {
+            "path": "./corpus/Prog/cp10_Funciones_recursivas_que_invocan_funciones_recursivas_que_invocan.pdf",
+            "title": "cp10_Funciones_recursivas_que_invocan_funciones_recursivas_que_invocan.pdf"
+        },
+        {
+            "path": "./corpus/Prog/cp11 - Más recursión, con algo de polimorfismo.pdf",
+            "title": "cp11 - Más recursión, con algo de polimorfismo.pdf"
+        },
+        {
+            "path": "./corpus/Prog/cp2 - code.rar",
+            "title": "cp2 - code.rar"
+        },
+        {
+            "path": "./corpus/Prog/cp2 - Hello Wolrd.pdf",
+            "title": "cp2 - Hello Wolrd.pdf"
+        },
+        {
+            "path": "./corpus/Prog/cp3 - Condicionales.pdf",
+            "title": "cp3 - Condicionales.pdf"
+        },
+        {
+            "path": "./corpus/Prog/cp4- funciones.pdf",
+            "title": "cp4- funciones.pdf"
+        },
+        {
+            "path": "./corpus/Prog/cp5 - Ciclos.pdf",
+            "title": "cp5 - Ciclos.pdf"
+        },
+        {
+            "path": "./corpus/Prog/cp6 - Clases.pdf",
+            "title": "cp6 - Clases.pdf"
+        },
+        {
+            "path": "./corpus/Prog/cp7 - Ciclos (for black belts).pdf",
+            "title": "cp7 - Ciclos (for black belts).pdf"
+        },
+        {
+            "path": "./corpus/Prog/cp8 - Ciclos (may the for be with you).pdf",
+            "title": "cp8 - Ciclos (may the for be with you).pdf"
+        },
+        {
+            "path": "./corpus/Prog/cp9 - It is all about The Matrix.pdf",
+            "title": "cp9 - It is all about The Matrix.pdf"
+        },
+        {
+            "path": "./corpus/Prog/Ejercicios-2.pdf",
+            "title": "Ejercicios-2.pdf"
+        }
+    ]
+}
