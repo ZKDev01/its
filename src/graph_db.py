@@ -1,12 +1,10 @@
 import json 
+from typing import List, Dict, Optional, Tuple, Set 
+from collections import deque, defaultdict
 from pymongo import MongoClient
-from typing import List, Dict, Optional
-
-
 
 
 class GraphDB:
-  
   def __init__(self, db_name:str = "graph_db", host:str = "localhost", port:int = 27017) -> None:
     """Inicializa la conexión a MongoDB y crea las colecciones necesarias
 
@@ -303,6 +301,15 @@ class GraphDB:
     
     return adjacent_entities  
 
+  def get_all_nodes(self) -> List[Dict]:
+    """Obtiene todos los nodos del grafo
+    
+    Returns:
+        List[Dict]: Lista de diccionarios con información de todos los nodos
+    """
+    nodes_cursor = self.nodes.find({})
+    return [node for node in nodes_cursor]
+
   def get_node_info(self, node_id:str) -> Optional[Dict]:
     """Obtiene información completa del nodo
     
@@ -335,9 +342,6 @@ class GraphDB:
       "node_types": self.get_node_types(),
       "relationship_types": self.get_relationship_types()
     }
-  
-  def retriever(self) -> ... :
-    pass 
   
   def clear_database(self, confirm:bool = False) -> Dict:
     """Elimina toda la información de la base de datos (todos los nodos y aristas) 
