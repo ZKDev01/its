@@ -7,40 +7,14 @@ def generate_random_plan(graph, student, n, m):
     plan = {}
     topics = random.sample(graph.all_topics(), len(graph.all_topics()))
     selected = 0
-
     for t in topics:
-        subtopics = graph.get_subtopics(t)
-        valid_subs = []
-
-        for s in subtopics:
-            if student.knowledge.get(s, 0) >= 0.4:
-                continue
-
-            prereqs = graph.prerequisites(s)
-            prereqs_satisfied = all(
-                student.knowledge.get(p, 0) >= 0.6 or p in [x for subs in plan.values() for x in subs]
-                for p in prereqs
-            )
-
-            if prereqs_satisfied:
-                valid_subs.append(s)
-            else:
-                for p in prereqs:
-                    if student.knowledge.get(p, 0) < 0.6:
-                        topic_p = graph.nodes[p]["topic"]
-                        if topic_p not in plan:
-                            plan[topic_p] = []
-                        if p not in plan[topic_p]:
-                            plan[topic_p].append(p)
-                valid_subs.append(s)
-
-        valid_subs = list(set(valid_subs))
-        if len(valid_subs) >= m:
-            plan[t] = random.sample(valid_subs, m)
+        subs = [s for s in graph.get_subtopics(t)
+                if student.knowledge.get(s, 0) < 0.4 and graph.is_prerequisite_satisfied(s, student, StudyPlan(plan))]
+        if len(subs) >= m:
+            plan[t] = random.sample(subs, m)
             selected += 1
             if selected >= n:
                 break
-
     return StudyPlan(plan)
 
 def crossover(p1, p2):
@@ -62,14 +36,20 @@ def mutate(plan, graph, student, m):
         plan.assignment[topic][random.randint(0, m-1)] = random.choice(subs)
     return plan
 
-def genetic_optimize(student, graph, n, m, pop_size=30, generations=50):
+def genetic_optimize(student, graph, n, m, pop_size=30, generations=50, weights=None):
+    from .evaluation import calculate_fitness, is_valid_plan
+    from .models import StudyPlan
+    import random
+
     population = [generate_random_plan(graph, student, n, m) for _ in range(pop_size)]
     best_plan = None
     best_fitness = float('-inf')
 
     for gen in range(generations):
-        scored = [(p, calculate_fitness(p, student, graph))
-                  for p in population if is_valid_plan(p, student, graph, n, m)]
+        scored = [
+            (p, calculate_fitness(p, student, graph, weights))
+            for p in population if is_valid_plan(p, student, graph, n, m)
+        ]
         scored.sort(key=lambda x: x[1], reverse=True)
 
         print(f"[Gen {gen}] Planes válidos: {len(scored)}")
@@ -87,7 +67,8 @@ def genetic_optimize(student, graph, n, m, pop_size=30, generations=50):
         if len(parents) < 2:
             parents = parents * 2
 
-        children = [scored[0][0]]  # Elitismo
+        # ✅ Elitismo
+        children = [scored[0][0]]
 
         while len(children) < pop_size:
             i1 = random.randint(0, len(parents) - 1)
