@@ -20,8 +20,12 @@ def generar_examen(numero_examen, nivel=0):
             if preguntas_filtradas:
                 pregunta_elegida = random.choice(preguntas_filtradas)
                 examen[carpeta] = pregunta_elegida
-    # Guarda el examen en la carpeta objetivo
-    out_path = os.path.join("exams", f"Examen {numero_examen}.json")
+    
+    # Guarda el examen en la carpeta objetivo, si no existe, la crea
+    folder_path = os.path.join("..", "exams")
+    out_path = os.path.join(folder_path, f"Examen {numero_examen}.json")
+
+    os.makedirs(folder_path, exist_ok=True)
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(examen, f, indent=2, ensure_ascii=False)
 
