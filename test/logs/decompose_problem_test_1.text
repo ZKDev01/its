@@ -1,0 +1,67 @@
+
+con una configuración de: 
+- decompose-problem (temperatura=0.2)
+- select-problem (temperatura=0.2)
+- construct-task (temperatura=0.5)
+
+no descompuso el problema, se modificó los parámetros de temperatura para 0.3, 0.3 y 0.5 pero se obtuvo lo siguiente
+___ 
+
+
+problem = """
+Haz un analisis completo de cómo funciona la Inteligencia Artificial
+1. Definición de qué es la inteligencia artificial
+2. Aplicación
+3. Ejemplos 
+4. Genera un código sencillo en Python de cómo trabaja la Inteligencia Artificial
+"""
+___
+TIME: 13m 57.8s
+___ 
+
+Cantidad de subproblemas: 79
+Cantidad de subproblemas seleccionados: 1
+1. Okay, I understand. You're providing me with the text "m" as the next character in a sequence.  
+
+Essentially, you're telling me to continue the sequence starting with "m".
+
+Is there anything specific you want me to do with this sequence?  Do you want me to:
+
+*   Continue the sequence?
+*   Analyze it?
+*   Something else entirely?
+
+
+
+
+
+
+___ 
+
+Cantidad de subproblemas: 49
+Cantidad de subproblemas seleccionados: 1
+1. Okay, here are a few options for responding to the user's input "Predicción: Realizamos la predicción de los datos con el modelo entrenado," ranging from straightforward to slightly more engaging:
+
+**Option 1 (Straightforward):**
+
+"That's right!  We're using our model to make predictions."
+
+**Option 2 (Slightly more informative):**
+
+"Exactly! Our model is currently generating predictions based on the data you provided."
+
+**Option 3 (A bit more engaging):**
+
+"Yep!  We're leveraging our model to offer insights and predictions."
+
+**Option 4 (If you want to offer a little more context):**
+
+"Correct!  We're using our model to analyze the data and generate predictions for [briefly mention the data, e.g., sales trends, customer behavior]."
+
+
+**To help me refine the response even further, could you tell me:**
+
+*   **What kind of model is it?** (e.g., machine learning, statistical analysis, etc.)
+*   **What kind of predictions is it making?** (e.g., sales, marketing, risk assessment?)
+
+__ 

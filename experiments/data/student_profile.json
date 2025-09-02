@@ -1,0 +1,34 @@
+{
+  "knowledge": {
+    "Algoritmos": 0.7,
+    "Bases de Datos": 0.2,
+    "Inteligencia Artificial": 0.0,
+    "Matemáticas Discretas": 0.4,
+    "Seguridad": 0.3,
+    "Frontend": 0.6,
+    "Desarrollo Backend": 0.1,
+    "Buenas Prácticas": 0.2
+  },
+  "preferences": {
+    "Algoritmos": 4,
+    "Bases de Datos": 5,
+    "Inteligencia Artificial": 5,
+    "Matemáticas Discretas": 3,
+    "Seguridad": 3,
+    "Frontend": 2,
+    "Desarrollo Backend": 4,
+    "Buenas Prácticas": 4
+  },
+  "difficulty": {
+    "Algoritmos": 2,
+    "Bases de Datos": 3,
+    "Inteligencia Artificial": 5,
+    "Matemáticas Discretas": 4,
+    "Seguridad": 3,
+    "Frontend": 3,
+    "Desarrollo Backend": 2,
+    "Buenas Prácticas": 2
+  },
+  "goal": "data_scientist",
+  "total_time": "16 semanas"
+}

@@ -21,7 +21,6 @@ from langchain_ollama import OllamaEmbeddings
 from langchain_core.documents import Document
 from langchain_chroma import Chroma
 
-from src.graph_retriever import GraphDB
 from src.information_extraction import extract_triples
 from src.scrapper import split_documments, load_dataset
 
