@@ -22,6 +22,9 @@ from langchain_core.prompts import (
   MessagesPlaceholder  
 )
 from src.ga_ils_scheduling_systems import run_scheduling, Solution
+from src.reasoning import LLMReasoning, ThoughtNode
+from src.discussion import Discussion
+from src.exam_generator import generar_examen
 
 GEMMA = "gemma3:1b"             # ollama gemma3:1b
 DEEPSEEK = "deepseek-r1:1.5b"   # ollama deepseek-r1:1.5b
@@ -302,64 +305,54 @@ class TaskPlannerAgent(BaseAgent):
         except Exception as e:
             return BaseResponse(False, self.name, None, f"Error en el algoritmo de scheduling: {str(e)}")
 
-class TextGenAgent(BaseAgent):
-  def __init__(self, llm: LLM, documents: List[str] = []):
-    super().__init__(
-      name="TextGenAgent",
-      description="Genera texto y argumentos mejorados.",
-      capabilities=[TaskType.TEXT_GENERATION]
-    )
-    self.llm = llm
-    self.documents = documents
-
-  def process(self, queries: List[str], results: List[Dict] = [], **kwargs) -> BaseResponse:
-    "Procesa una consulta basándose en los documentos disponibles"
-    if not queries:
-      return BaseResponse(
-        success=False,
-        agent=self.name,
-        result=None,
-        message="No se encuentran 'queries' en los parámetros"
-      )
-    
-    answers = []
-    for query in queries:
-      answer = self._process_query(query=query)
-      answers.append(answer)
-    
-    return BaseResponse(
-      success=True, 
-      agent=self.name,
-      result=answers,
-      message="Procesamiento de consultas completado exitosamente"
-    )
-  
-  def _process_query(self, query: str) -> str:
-    "Procesa una consulta individual usando los documentos disponibles"
-    enhanced_query = f""" 
-    {query}
-    ---
-    Documentos disponibles:
-    {self.documents}
-    """
-    response = self.llm(query=enhanced_query)
-    return response
-
 class ReasoningAgent(BaseAgent):
     def __init__(self, llm: LLM):
         super().__init__(
             name="ReasoningAgent",
-            description="Realiza razonamientos, deducciones y análisis complejos.",
+            description="Realiza razonamientos, deducciones y análisis complejos usando MCTS.",
             capabilities=[TaskType.REASONING]
         )
         self.llm = llm
+        self.reasoning_component = LLMReasoning(main_model=llm.model, temperature=llm.temperature)
 
     def process(self, queries: List[str], results: List[Dict] = [], **kwargs) -> BaseResponse:
         if not queries:
             return BaseResponse(False, self.name, None, "No se proporcionó consulta.")
-        reasoning_prompt = f"Resuelve y justifica el siguiente problema complejo:\n{queries[0]}"
-        reasoning = self.llm(reasoning_prompt)
-        return BaseResponse(True, self.name, reasoning, "Razonamiento realizado exitosamente.")
+        topic = queries[0]
+        try:
+            reasoning_tree: ThoughtNode = self.reasoning_component.build_reasoning_tree(
+                topic=topic,
+                max_depth=3,
+                iterations=10,
+                verbose=False
+            )
+            best_chains = self.reasoning_component.get_best_reasoning_chains(reasoning_tree, n_chains=1)
+            chain_text = "\n".join([node.get_reasoning_chain() for node in best_chains[0]])
+            return BaseResponse(True, self.name, chain_text, "Razonamiento MCTS generado exitosamente.", reasoning_tree=reasoning_tree)
+        except Exception as e:
+            return BaseResponse(False, self.name, None, f"Error en razonamiento MCTS: {str(e)}")
+
+class TextGenAgent(BaseAgent):
+    def __init__(self, llm: LLM, documents: List[str] = []):
+        super().__init__(
+            name="TextGenAgent",
+            description="Genera texto y argumentos mejorados usando discusión multi-agente.",
+            capabilities=[TaskType.TEXT_GENERATION]
+        )
+        self.llm = llm
+        self.documents = documents
+        self.discussion_component = Discussion(tutor_model=llm.model)
+
+    def process(self, queries: List[str], results: List[Dict] = [], **kwargs) -> BaseResponse:
+        if not queries:
+            return BaseResponse(False, self.name, None, "No se proporcionó consulta.")
+        topic = queries[0]
+        try:
+            discussion_results = self.discussion_component.run_discuss(topic, k_iterations=3, verbose=False)
+            final_response = self.discussion_component.generate_final_response(discussion_results)
+            return BaseResponse(True, self.name, final_response, "Discusión multi-agente completada.", discussion_results=discussion_results)
+        except Exception as e:
+            return BaseResponse(False, self.name, None, f"Error en discusión multi-agente: {str(e)}")
 
 class QAGenerationAgent(BaseAgent):
     def __init__(self, llm: LLM):
@@ -373,9 +366,12 @@ class QAGenerationAgent(BaseAgent):
     def process(self, queries: List[str], results: List[Dict] = [], **kwargs) -> BaseResponse:
         if not queries:
             return BaseResponse(False, self.name, None, "No se proporcionó consulta.")
-        qa_prompt = f"Genera preguntas y respuestas relevantes sobre:\n{queries[0]}"
-        qa = self.llm(qa_prompt)
-        return BaseResponse(True, self.name, qa, "Preguntas y respuestas generadas exitosamente.")
+        try:
+            # Genera un examen con nivel 1 por defecto
+            generar_examen(numero_examen=1, nivel=1)
+            return BaseResponse(True, self.name, "Examen generado exitosamente.", "Examen generado y guardado en carpeta /exams.")
+        except Exception as e:
+            return BaseResponse(False, self.name, None, f"Error al generar examen: {str(e)}")
         
 prompt_AgentEngine = """
 Tienes que elegir el agente más apropiado para responder la siguiente consulta.
@@ -544,9 +540,8 @@ Analiza la siguiente descripción de tarea y determina cuál de estos tipos de t
 
 TIPOS DE TAREA DISPONIBLES:
 1. TASK_PLANNER (planificador de tareas) - Para crear planes, rutas de aprendizaje, organizar actividades, etc.
-2. TEXT_GENERATION (generación mejorada de argumentos) - Para crear contenido textual, escribir argumentos, explicaciones, etc.
+2. TEXT_GENERATION (generación mejorada de argumentos) - Para crear contenido textual, explicar contenidos, escribir argumentos, explicaciones, etc.
 3. REASONING (razonamiento) - Para analizar, justificar, deducir, resolver problemas complejos, etc.
-4. QA_GENERATION (generación de preguntas y respuestas) - Para generar preguntas, respuestas, exámenes, evaluaciones, etc.
 
 DESCRIPCIÓN DE LA TAREA:
 "{description}"
@@ -560,6 +555,9 @@ INSTRUCCIONES:
 RESPUESTA:
 """
 
+# 4. QA_GENERATION (generación de preguntas y respuestas) - Para generar preguntas, exámenes, evaluaciones, etc.
+
+
 def get_task_type_by_description(description:str) -> TaskType:
   "Clasifica el tipo de task según los tipos de task disponibles"
   llm = Ollama(model=GEMMA, temperature=0.3)
@@ -568,7 +566,7 @@ def get_task_type_by_description(description:str) -> TaskType:
     "TASK_PLANNER": TaskType.TASK_PLANNER,
     "TEXT_GENERATION": TaskType.TEXT_GENERATION,
     "REASONING": TaskType.REASONING,
-    "QA_GENERATION": TaskType.QA_GENERATION
+    #"QA_GENERATION": TaskType.QA_GENERATION
   }
   
   if response in task_type_mapping:

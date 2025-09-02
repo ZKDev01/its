@@ -16,7 +16,7 @@ if not engine.task_manager.agents:
     engine.register_agent(TaskPlannerAgent(llm=llm))
     engine.register_agent(TextGenAgent(llm=llm, documents=docs))
     engine.register_agent(ReasoningAgent(llm=llm))
-    engine.register_agent(QAGenerationAgent(llm=llm))
+    #engine.register_agent(QAGenerationAgent(llm=llm))
 
 st.title("Intelligent Tutoring System - AgentEngine")
 
